@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/BPW_Project_StartScreen.unity
+    guid: 84fee10b2da97614e954e278eb9045b3
+  - enabled: 1
+    path: Assets/BPW_Project_V4.unity
+    guid: 2bd33b9f19bcb094c92ead0bc1d114a6
   m_configObjects: {}

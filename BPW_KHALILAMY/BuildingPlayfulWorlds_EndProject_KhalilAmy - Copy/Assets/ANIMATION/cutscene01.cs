@@ -7,14 +7,19 @@ public class cutscene01 : MonoBehaviour
     public GameObject thePlayer; 
     public GameObject cutSceneCam; 
 
-    void OntriggerEnter(Collider other)
-    {
-    if (other.gameObject.CompareTag("Player")) { 
-        cutSceneCam.SetActive(true);
+    void OnCollisionEnter(Collision other){
+        Debug.Log("CollisionOther");
+        if(other.gameObject.tag == "Player"){
+    
+       cutSceneCam.SetActive(true);
+
         thePlayer.SetActive(false);
 
-        Debug.Log("collision detected");
-    }
+
+        this.gameObject.SetActive(false); 
+
+        Debug.Log("collision");
+        }
     }
         
 }
